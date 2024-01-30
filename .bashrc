@@ -53,7 +53,7 @@ hypr() {
 }
 # Make a directory and cd into it
 mkcd() {
-	mkdir -p -- "$1" && cs -P -- "$1"
+	mkdir -p -- "$1" && cd -P -- "$1"
 }
 # lol
 shh() {
