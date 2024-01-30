@@ -1,6 +1,6 @@
 * {
 	font-size: 16;
-	font-family: monospace;
+	font-family: monospace, FontAwesome, SauceCodePro;
 }
 
 window#waybar {
@@ -18,7 +18,9 @@ window#waybar {
 	background: #1a1a1a;
 }
 
-#workspaces,
+#workspaces {
+	background: #1a1a1a;
+}
 #clock.1,
 #clock.2,
 #clock.3,
@@ -33,7 +35,7 @@ window#waybar {
 
 #workspaces button {
 	padding: 0 2px;
-	color: #fdf6e3;
+	color: #DABDFB;
 }
 #workspaces button.focused {
 	color: #268bd2;
@@ -58,13 +60,23 @@ window#waybar {
 	color: #6c71c4;
 }
 #battery {
-	color: #859900;
+	color: #008010;
 }
 #disk {
 	color: #b58900;
 }
+#network {
+  color: #9D79FF;
+	background: #1a1a1a;
+}
+#network.2 {
+  color: #9D79FF;
+	background: #1a1a1a;
+}
+#clock {
+  color: #DABDFB;
+}
 
-#clock,
 #pulseaudio,
 #memory,
 #cpu,

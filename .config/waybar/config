@@ -4,10 +4,14 @@
 	"position": "top",
 
 	"modules-left": [
-        "network",
-        "custom/right-arrow-light",
+        "hyprland/workspaces",
         "custom/right-arrow-dark",
-        "network2"
+        "custom/right-arrow-light",
+        "network",
+        "custom/right-arrow-dark",
+        "custom/right-arrow-light",
+        "network#2",
+        "custom/right-arrow-dark",
 	],
 	"modules-center": [
 		"custom/left-arrow-dark",
@@ -55,22 +59,22 @@
 	},
 
 	"clock#1": {
-		"format": "{:%a}",
+		"format": " {:%a} ",
 		"tooltip": false
 	},
 	"clock#2": {
-		"format": "{:%H:%M}",
+		"format": " {:%H:%M} ",
 		"tooltip": false
 	},
 	"clock#3": {
-		"format": "{:%m-%d}",
+		"format": " {:%m-%d} ",
 		"tooltip": false
 	},
 
 	"pulseaudio": {
 		"format": "{icon} {volume:2}%",
 		"format-bluetooth": "{icon}  {volume}%",
-		"format-muted": "MUTE",
+		"format-muted": "Shh",
 		"format-icons": {
 			"headphones": "",
 			"default": [
@@ -78,7 +82,7 @@
 				""
 			]
 		},
-		"scroll-step": 5,
+		"scroll-step": 1,
 		"on-click": "pamixer -t",
 		"on-click-right": "pavucontrol"
 	},
@@ -88,11 +92,11 @@
 	},
 	"cpu": {
 		"interval": 5,
-		"format": "CPU {usage:2}%"
+		"format": "Cpu {usage:2}%"
 	},
 	"battery": {
 		"states": {
-			"good": 95,
+			"good": 80,
 			"warning": 30,
 			"critical": 15
 		},
@@ -112,21 +116,33 @@
 	},
     "network": {
 	    "format": "{ipaddr}  ",
-	    "format-wifi": "{essid} ({signalStrength}%)  ",
-	    "format-ethernet": "{ifname}  ",
+	    "format-wifi": "{essid} {signalStrength}% ",
+	    "format-ethernet": "{ifname} ",
 	    "format-disconnected": "", //An empty format will hide the module.
 	    "format-disconnected": " ",
-	    "tooltip-format": "{ifname}",
-	    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+	    "tooltip-format": "{ipaddr}",
+	    "tooltip-format-wifi": "{ipaddr} ({signalStrength}%)",
 	    "tooltip-format-ethernet": "{ifname}",
 	    "tooltip-format-disconnected": "Disconnected",
 	    "max-length": 50
     },
-    "network2": {
-            "format": "{bandwidthUpBits} {bandwidthDownBits}"
+    "network#2": {
+            "format": " {bandwidthUpBits}  {bandwidthDownBits}   ",
+            "interval": 5
         },
 	"tray": {
-		"icon-size": 16,
+		"icon-size": 15,
         "spacing": 8
-	}
+	},
+  "hyprland/workspaces": {
+	"format": "{name}:{icon} ",
+	"format-icons": {
+		"1": "󰈹",
+		"2": "",
+		"3": "",
+		"active": "",
+		"default": ""
+	},
+	"sort-by-number": true
+  }
 }
