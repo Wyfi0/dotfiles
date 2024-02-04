@@ -31,16 +31,6 @@ PS1='[\u@\h \W]\$ '
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-# Aliasssss sus [just maps a command to another]
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
-
-# How much of the history to store in ram in command count
-HISTSIZE=1000
-# How many commands to save on disk
-HISTFILESIZE=1000
-
 # Sets up the prompt before where you type
 PS1='[\u@\h \W]\$ '
 
