@@ -9,9 +9,15 @@
 cutefetch
 
 # Aliasssss sus [just maps a commant to another]
+# Nice colors
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+# Use config command to manage my dotfiles on github from anywhere 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+
+# List files currently being tracked by config
+alias lsconfig='config ls-tree -r HEAD --name-only'
 
 # How much of the history to store in ram in command count
 HISTSIZE=1000
@@ -33,7 +39,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 # How much of the history to store in ram in command count
 HISTSIZE=1000
 # How many commands to save on disk
-HISTFILESIZE=10000
+HISTFILESIZE=1000
 
 # Sets up the prompt before where you type
 PS1='[\u@\h \W]\$ '
