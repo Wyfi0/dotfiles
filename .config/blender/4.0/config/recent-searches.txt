@@ -1,0 +1,24 @@
+ 0 Green.001
+ 0 CeramicPlainWhite001_2K
+ 0 Green
+Output ▸ Material Output
+Color ▸ Mix Color
+Shader ▸ Principled BSDF
+   GroundSand005_2K
+   CeramicPlainWhite001_2K
+ 0 GroundSand005_2K
+ F Green
+ 0 Mix
+   Mix
+Shader ▸ Mix Shader
+Converter ▸ Mix
+Input ▸ Value
+Generate ▸ Mirror
+Generate ▸ Subdivision Surface
+Generate ▸ Build
+   Collection 2
+   Collection
+
+   Gray floor
+   Material
+   yoo

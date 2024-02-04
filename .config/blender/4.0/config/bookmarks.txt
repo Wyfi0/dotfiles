@@ -1,0 +1,13 @@
+[Bookmarks]
+/mnt/Raid/Documents/Projects/Blender/
+[Recent]
+/home/wyatt/Documents/Blender/NOT the twin towers/
+/home/wyatt/Documents/Blender/Water Bottle/
+/home/wyatt/Documents/Blender/Blocks/
+/home/wyatt/Documents/Blender/Textures/
+/home/wyatt/Documents/Blender/
+/mnt/Raid/Documents/Projects/Blender/
+/mnt/Raid/Documents/Projects/Blender/Textures/
+/home/wyatt/Desktop/
+/etc/blendnet/
+/home/wyatt/Downloads/

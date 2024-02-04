@@ -1,0 +1,2 @@
+{Intel/Mesa Intel(R) UHD Graphics (CML GT2)/4.6 (Core Profile) Mesa 23.3.2-arch1.2}=SUPPORTED
+{Intel/Mesa Intel(R) UHD Graphics (CML GT2)/4.6 (Core Profile) Mesa 23.3.3-arch1.1}=SUPPORTED
