@@ -10,7 +10,8 @@ cutefetch
 
 # Aliasssss sus [just maps a commant to another]
 # Nice colors
-alias ls='ls --color=auto'
+# Show hidden files by default as well
+alias ls='ls -a --color=auto'
 alias grep='grep --color=auto'
 
 # Use config command to manage my dotfiles on github from anywhere 
