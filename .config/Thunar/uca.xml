@@ -6,7 +6,7 @@
 	<submenu></submenu>
 	<unique-id>1704132820606068-1</unique-id>
 	<command> kitty %f </command>
-	<description>Example for a custom action</description>
+	<description>Open kitty here</description>
 	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
