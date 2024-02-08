@@ -5,9 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Introduce yourself,
-cutefetch
-
 # Aliasssss sus [just maps a commant to another]
 # Nice colors
 # Show hidden files by default as well
@@ -17,6 +14,8 @@ alias grep='grep --color=auto'
 # Use config command to manage my dotfiles on github from anywhere 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
+alias mountsrv='sudo mount 192.168.0.12:/srv/nfs/md0/ /mnt/Raid'
+
 # List files currently being tracked by config
 alias lsconfig='config ls-tree -r HEAD --name-only'
 
@@ -24,13 +23,6 @@ alias lsconfig='config ls-tree -r HEAD --name-only'
 HISTSIZE=1000
 # How many commands to save on disk (im a maniac)
 HISTFILESIZE=10000
-
-# Sets up the prompt before where you type
-PS1='[\u@\h \W]\$ '
-
-# Set neovim as default
-export EDITOR='nvim'
-export VISUAL='nvim'
 
 # Sets up the prompt before where you type
 PS1='[\u@\h \W]\$ '
@@ -60,3 +52,7 @@ shh() {
 hawk() {
 	history | awk "/$1/"
 }
+
+# Finally, introduce yourself.
+cutefetch
+
