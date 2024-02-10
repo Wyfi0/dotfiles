@@ -20,7 +20,7 @@ alias mountsrv='sudo mount 192.168.0.12:/srv/nfs/md0/ /mnt/Raid'
 alias lsconfig='config ls-tree -r HEAD --name-only'
 
 # How much of the history to store in ram in command count
-HISTSIZE=1000
+HISTSIZE=10000
 # How many commands to save on disk (im a maniac)
 HISTFILESIZE=10000
 
