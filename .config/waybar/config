@@ -118,7 +118,7 @@
 	    "format": "{ipaddr}  ",
 	    "format-wifi": "{essid} {signalStrength}% ",
 	    "format-ethernet": "{ifname} ",
-	    "format-disconnected": "", //An empty format will hide the module.
+	    "format-disconnected": "󰪎", //An empty format will hide the module.
 	    "format-disconnected": " ",
 	    "tooltip-format": "{ipaddr}",
 	    "tooltip-format-wifi": "{ipaddr} ({signalStrength}%)",
