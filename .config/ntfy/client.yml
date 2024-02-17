@@ -2,10 +2,10 @@
 # Base URL used to expand short topic names in the "ntfy publish" and "ntfy subscribe" commands.
 # If you self-host a ntfy server, you'll likely want to change this.
 #
-default-host: http://192.168.0.12
+default-host: http://192.168.0.12:37985
 
 subscribe:
   - topic: mytopic
     command: 'echo "Message recieved: $message'
   - topic: alerts
-    command: 'notify-send "$message"'
+    command: 'dunstify "$message"'
