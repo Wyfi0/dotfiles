@@ -95,19 +95,16 @@
 		"format": "Cpu {usage:2}%"
 	},
 	"battery": {
+    "interval": 30,
 		"states": {
 			"good": 80,
 			"warning": 30,
 			"critical": 15
 		},
 		"format": "{icon} {capacity}%",
-		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
-		]
+		"format-icons": ["", "", "", "", ""],
+    "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
+    "format-full": "Charged",
 	},
 	"disk": {
 		"interval": 5,

@@ -62,6 +62,9 @@ window#waybar {
 #battery {
 	color: #008010;
 }
+#battery.critical {
+  color: #ff0000
+}
 #disk {
 	color: #b58900;
 }
