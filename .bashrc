@@ -11,6 +11,9 @@
 alias ls='ls -a --color=auto'
 alias grep='grep --color=auto'
 
+# Im sad
+alias neofetch='fastfetch'
+
 # Use config command to manage my dotfiles on github from anywhere 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
