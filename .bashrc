@@ -59,3 +59,6 @@ hawk() {
 # Finally, introduce yourself.
 cutefetch
 
+# aaaand run starship
+eval "$(starship init bash)"
+
