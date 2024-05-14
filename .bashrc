@@ -56,8 +56,8 @@ hawk() {
 	history | awk "/$1/"
 }
 
-# Finally, introduce yourself.
-cutefetch
+# Finally, introduce yourself, with pokemon!
+krabby random
 
 # aaaand run starship
 eval "$(starship init bash)"
