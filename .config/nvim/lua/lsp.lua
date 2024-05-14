@@ -10,7 +10,7 @@ require('mason').setup({
 
 require('mason-lspconfig').setup({
     -- list of servers to install if not installed already
-    ensure_installed = { 'pylsp', 'lua_ls', 'rust_analyzer', 'phpactor', 'html', 'cssls', 'cssmodules_ls', 'bashls', 'dockerls', 'docker_compose_language_service', 'prismals' },
+    ensure_installed = { 'pylsp', 'lua_ls', 'rust_analyzer', 'phpactor', 'html', 'cssls', 'cssmodules_ls', 'bashls', 'dockerls', 'docker_compose_language_service', 'prismals', 'gopls' },
 })
 
 -- Set different settings for different languages' LSP
@@ -142,3 +142,7 @@ require'lspconfig'.ccls.setup{}
 
 -- enable prismals (javascript and typescript)
 require'lspconfig'.prismals.setup{}
+
+-- enable gopls
+require'lspconfig'.gopls.setup{}
+
