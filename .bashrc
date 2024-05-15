@@ -57,7 +57,7 @@ hawk() {
 }
 
 # Finally, introduce yourself, with pokemon!
-krabby random
+krabby random 1-6
 
 # aaaand run starship
 eval "$(starship init bash)"
