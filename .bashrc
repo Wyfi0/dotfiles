@@ -52,9 +52,10 @@ shh() {
 	ssh wyatt@192.168.0.12 -p 43083
 }
 # history awk
-hawk() {
-	history | awk "/$1/"
-}
+
+alias hawk="history | awk "/$1/""
+
+alias lsawk="$(ls $1) | awk "/$2/""
 
 # Finally, introduce yourself, with pokemon!
 krabby random 1-6
