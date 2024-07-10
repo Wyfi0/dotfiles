@@ -57,8 +57,15 @@ alias hawk="history | awk "/$1/""
 
 alias lsawk="$(ls $1) | awk "/$2/""
 
+alias fawk="history | fzf"
+
+alias H="Hyprland"
+
 # Finally, introduce yourself, with pokemon!
 krabby random 1-6
+
+# holy shit fzf is so fircking cool (this sets up keybinds)
+eval "$(fzf --bash)"
 
 # aaaand run starship
 eval "$(starship init bash)"
