@@ -48,4 +48,7 @@ require("lazy").setup({
 	"neovim/nvim-lspconfig",
 })
 
+-- Arduino setup thing 
+
+
 

@@ -6,9 +6,9 @@
     "margin-bottom": 0,
     "margin-right": 10,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "network#2", "custom/weather", "hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "backlight", "pulseaudio", "network", "battery", "clock", "custom/power-menu"],
+    "modules-right": ["tray", "backlight", "pulseaudio", "bluetooth", "network", "battery", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
@@ -124,6 +124,10 @@
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
         "on-click": "rofi -show drun",
+    },
+    "network#2": {
+        "format": "{bandwidthUpBits}  {bandwidthDownBits}  ",
+        "interval": 5
     },
 }
 
