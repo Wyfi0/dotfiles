@@ -17,6 +17,8 @@ alias neofetch='fastfetch'
 # Use config command to manage my dotfiles on github from anywhere 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
+alias conftui='gitui --directory $HOME/.myconf/ --workdir $HOME'
+
 alias mountsrv='sudo mount 192.168.0.12:/srv/nfs/md0/ /mnt/Raid'
 
 # List files currently being tracked by config
