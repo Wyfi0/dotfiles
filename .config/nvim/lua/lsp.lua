@@ -181,5 +181,15 @@ require'lspconfig'.prismals.setup{}
 -- enable gopls
 require'lspconfig'.gopls.setup{}
 
+-- enable clangd for arduino
+require'lspconfig'.clangd.setup({
+    name = 'clangd',
+    cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
+    initialization_options = {
+        fallback_flags = { 'std=c++17' },
+    },
+})
 -- enable arduino-nvim (ar du in deez nuts)
-require'lspconfig'.arduino_language_server.setup{}
+require'lspconfig'.arduino_language_server.setup{
+    filetypes = "arduino",
+}
