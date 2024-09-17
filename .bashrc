@@ -19,7 +19,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
 alias conftui='gitui --directory $HOME/.myconf/ --workdir $HOME'
 
-alias mountsrv='sudo mount 192.168.0.12:/srv/nfs/md0/ /mnt/Raid'
+alias mountsrv='sudo mount 192.168.2.6:/srv/nfs/md0/ /mnt/Raid'
 
 # List files currently being tracked by config
 alias lsconfig='config ls-tree -r HEAD --name-only'
@@ -51,7 +51,11 @@ mkcd() {
 }
 # lol
 shh() {
-	ssh wyatt@192.168.0.12 -p 43083
+	ssh wyatt@192.168.2.6 -p 43083
+}
+# lol
+trans() {
+	ssh raina@192.168.2.69
 }
 # history awk
 
@@ -62,6 +66,8 @@ alias lsawk="$(ls $1) | awk "/$2/""
 alias fawk="history | fzf"
 
 alias H="Hyprland"
+
+alias fuck="/usr/bin/pipewire & /usr/bin/pipewire-pulse & /usr/bin/wireplumber"
 
 # Finally, introduce yourself, with pokemon!
 krabby random 1-6
