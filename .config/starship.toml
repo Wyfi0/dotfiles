@@ -10,6 +10,11 @@ add_newline = false
 #[character] # The name of the module we are configuring is 'character'
 #success_symbol = '[❯❯](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
 
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
+# Alter the hostname default to remove the ssh icon
+[hostname]
+format = '[$hostname]($style) in '
+
+[memory_usage]
+disabled = false
+threshold = -1
+format = 'w/ $symbol[${ram}( | ${swap})]($style) '
