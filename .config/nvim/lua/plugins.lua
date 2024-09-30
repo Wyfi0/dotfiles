@@ -36,19 +36,35 @@ require("lazy").setup({
 		"L3MON4D3/LuaSnip",
 		version = "v2.*",
 	},
+    -- Tokyo Night theme
     {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
+     "folke/tokyonight.nvim",
+     lazy = false,
+     priority = 1000,
+     opts = {},
     },
     	-- LSP manager
-	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
-})
+	    "williamboman/mason.nvim",
+	    "williamboman/mason-lspconfig.nvim",
+	    "neovim/nvim-lspconfig",
+    },
+    -- telescope????? o.o
+    {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+      dependencies = { 'nvim-lua/plenary.nvim' }
 
--- Arduino setup thing 
+    },
+        -- Markdown Preview Nvim <3
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        build = "cd app && yarn install",
+        init = function()
+            vim.g.mkdp_filetypes = { "markdown" }
+        end,
+        ft = { "markdown" },
+    })
+
 
 
 
