@@ -24,6 +24,8 @@ alias mountsrv='sudo mount 192.168.2.6:/srv/nfs/md0/ /mnt/Raid'
 # List files currently being tracked by config
 alias lsconfig='config ls-tree -r HEAD --name-only'
 
+alias smash='~/Downloads/Slippi-Launcher-2.11.6-x86_64.AppImage'
+
 # How much of the history to store in ram in command count
 HISTSIZE=10000
 # How many commands to save on disk (im a maniac)
