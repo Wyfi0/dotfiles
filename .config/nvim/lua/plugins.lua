@@ -1,5 +1,6 @@
+-- Install Lazy.nvim automatically
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
+if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
     "clone",
@@ -54,7 +55,17 @@ require("lazy").setup({
       dependencies = { 'nvim-lua/plenary.nvim' }
 
     },
-        -- Markdown Preview Nvim <3
+    -- Git integration
+    "tpope/vim-fugitive",
+    -- Startup (WIP)
+    {
+        "startup-nvim/startup.nvim",
+        dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", "nvim-telescope/telescope-file-browser.nvim" },
+        config = function ()
+            require "startup".setup()
+        end
+    },
+        -- Markdown Preview Nvim <3 (WIP)
     {
         "iamcco/markdown-preview.nvim",
         cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
