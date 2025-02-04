@@ -7,3 +7,4 @@
 
 #### Have a good day!
 
+[This is the way that I manage my dotfiles with git](https://www.atlassian.com/git/tutorials/dotfiles)
