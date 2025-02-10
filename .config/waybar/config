@@ -85,7 +85,7 @@
     },
 
     "battery": {
-      "bat": "BAT0",
+      "bat": "BAT1",
       "adapter": "ADP0",
       "interval": 60,
       "states": {
@@ -122,7 +122,7 @@
         "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh",
     }, 
     "custom/launcher": {
-        "format": " <span color='#6a92d7'> </span>",
+        "format": " <span color='#6a92d7'> </span>",
         "on-click": "hyprlauncher",
         "tooltip-format": "Artix btw",
     },
