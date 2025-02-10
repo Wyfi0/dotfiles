@@ -15,9 +15,9 @@ alias grep='grep --color=auto'
 alias neofetch='fastfetch'
 
 # Use config command to manage my dotfiles on github from anywhere 
-alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-alias conftui='gitui --directory $HOME/.myconf/ --workdir $HOME'
+alias conftui='gitui --directory $HOME/.cfg/  --workdir $HOME'
 
 alias mountsrv='sudo mount 192.168.2.6:/srv/nfs/md0/ /mnt/Raid'
 
