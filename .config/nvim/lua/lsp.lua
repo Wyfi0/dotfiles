@@ -10,7 +10,7 @@ require('mason').setup({
 
 require('mason-lspconfig').setup({
     -- list of servers to install if not installed already
-    ensure_installed = { 'pylsp', 'lua_ls', 'rust_analyzer', 'phpactor', 'html', 'cssls', 'cssmodules_ls', 'bashls', 'dockerls', 'docker_compose_language_service', 'prismals', 'gopls', 'arduino_language_server' },
+    ensure_installed = { 'pylsp', 'lua_ls', 'rust_analyzer', 'phpactor', 'html', 'cssls', 'cssmodules_ls', 'bashls', 'dockerls', 'docker_compose_language_service', 'prismals', 'gopls' },
 })
 
 -- Set different settings for different languages' LSP
@@ -189,7 +189,3 @@ require'lspconfig'.clangd.setup({
         fallback_flags = { 'std=c++17' },
     },
 })
--- enable arduino-nvim (ar du in deez nuts)
-require'lspconfig'.arduino_language_server.setup{
-    filetypes = "arduino",
-}
