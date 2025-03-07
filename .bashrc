@@ -71,6 +71,8 @@ alias H="Hyprland"
 
 alias fuck="/usr/bin/pipewire & /usr/bin/pipewire-pulse & /usr/bin/wireplumber"
 
+alias softsh="TERM=xterm-256color \ ssh soft"
+
 # Finally, introduce yourself, with pokemon!
 krabby random 1-6
 
