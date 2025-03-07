@@ -13,7 +13,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    	-- Vscode-like pictograms
+    -- Vscode-like pictograms
 	{
 		"onsails/lspkind.nvim",
 		event = { "VimEnter" },
@@ -44,7 +44,7 @@ require("lazy").setup({
      priority = 1000,
      opts = {},
     },
-    	-- LSP manager
+    -- LSP manager
 	    "williamboman/mason.nvim",
 	    "williamboman/mason-lspconfig.nvim",
 	    "neovim/nvim-lspconfig",
@@ -57,24 +57,35 @@ require("lazy").setup({
     },
     -- Git integration
     "tpope/vim-fugitive",
-    -- Startup (WIP)
+    -- Markdown Preview Nvim <3 (WIP)
     {
-        "startup-nvim/startup.nvim",
-        dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", "nvim-telescope/telescope-file-browser.nvim" },
-        config = function ()
-            require "startup".setup()
-        end
+      "vhyrro/luarocks.nvim",
+      priority = 1000,
+      config = true,
     },
-        -- Markdown Preview Nvim <3 (WIP)
+    -- Mini suite of stuff
     {
-        "iamcco/markdown-preview.nvim",
-        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-        build = "cd app && yarn install",
-        init = function()
-            vim.g.mkdp_filetypes = { "markdown" }
-        end,
-        ft = { "markdown" },
-    })
+      'echasnovski/mini.nvim',
+      version = false
+
+    },
+    {
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
+    config = function ()
+        require('render-markdown').setup({})
+    end,
+    },
+    {
+  "vhyrro/luarocks.nvim",
+  priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
+  config = true,
+})
 
 
 

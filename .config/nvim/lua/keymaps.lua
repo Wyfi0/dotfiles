@@ -32,3 +32,9 @@ vim.keymap.set('n', '<C-l>', ':vertical resize +2<CR>', opts)
 vim.keymap.set('v', '<', '<gv', opts)
 vim.keymap.set('v', '>', '>gv', opts)
 
+----------------------
+-- Markdown Preview --
+----------------------
+
+vim.keymap.set('n', '<C-p>', ':MarkdownPreviewToggle', opts)
+
