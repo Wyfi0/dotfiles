@@ -6,7 +6,7 @@
     "margin-bottom": 0,
     "margin-right": 10,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "network#2", "custom/weather", "hyprland/workspaces"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "network#2", "temperature", "custom/weather", "hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["tray", "backlight", "pulseaudio", "network", "battery", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
@@ -43,7 +43,7 @@
       "on-click": "kitty btop",
     },
     "memory": {
-        "interval": 30,
+        "interval": 10,
         "format": " {}%",
         "format-alt":" {used:0.1f}G",
         "max-length": 10,
@@ -127,8 +127,14 @@
         "tooltip-format": "Artix btw",
     },
     "network#2": {
-        "format": "{bandwidthUpBits}  {bandwidthDownBits}  ",
+        "format": " {bandwidthUpBits}  {bandwidthDownBits}",
         "interval": 5
+    },
+    "temperature": {
+        "format": "{temperatureC}°C",
+        "interval": 5,
+        "thermal-zone": 3,
+        "critical-threshold": 85,
     },
 }
 

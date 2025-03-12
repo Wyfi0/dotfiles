@@ -239,13 +239,13 @@ label:focus {
 #custom-media.custom-vlc {
   background-color: #ffa000;
 }
-
+/*
 #temperature {
   background-color: #f0932b;
 }
-
-#temperature.critical {
-  background-color: #eb4d4b;
+*/
+#temperature {
+  color: #c6737b;
 }
 
 #tray > .passive {
