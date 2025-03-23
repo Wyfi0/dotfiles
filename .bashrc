@@ -26,6 +26,7 @@ alias lsconfig='config ls-tree -r HEAD --name-only'
 
 alias smash='~/Downloads/Slippi-Launcher-2.11.6-x86_64.AppImage'
 
+alias pdrop='hugo build && scp -rv public/* 64.227.4.155:/home/raina/docker/nginx/src'
 # How much of the history to store in ram in command count
 HISTSIZE=10000
 # How many commands to save on disk (im a maniac)
@@ -59,6 +60,10 @@ shh() {
 trans() {
 	ssh raina@192.168.2.69
 }
+# lol
+drop() {
+	ssh raina@64.227.4.155
+}
 # history awk
 
 alias hawk="history | awk "/$1/""
@@ -71,7 +76,7 @@ alias H="Hyprland"
 
 alias fuck="/usr/bin/pipewire & /usr/bin/pipewire-pulse & /usr/bin/wireplumber"
 
-alias softsh="TERM=xterm-256color \ ssh soft"
+alias softsh="TERM=xterm-256color ssh soft"
 
 # Finally, introduce yourself, with pokemon!
 krabby random 1-6
