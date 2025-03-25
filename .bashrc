@@ -5,6 +5,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Check if the ntfy.env exists and if so, include it 
+if [ -f $HOME/.ntfyenv ]; then
+    . $HOME/.ntfyenv
+    echo hiii
+fi
+
 # Aliasssss sus [just maps a commant to another]
 # Nice colors
 # Show hidden files by default as well
