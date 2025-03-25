@@ -8,7 +8,6 @@
 # Check if the ntfy.env exists and if so, include it 
 if [ -f $HOME/.ntfyenv ]; then
     . $HOME/.ntfyenv
-    echo hiii
 fi
 
 # Aliasssss sus [just maps a commant to another]
