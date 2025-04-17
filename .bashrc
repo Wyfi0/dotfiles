@@ -10,6 +10,7 @@ if [ -f $HOME/.ntfyenv ]; then
     . $HOME/.ntfyenv
 fi
 
+alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
 # Aliasssss sus [just maps a commant to another]
 # Nice colors
 # Show hidden files by default as well
@@ -59,7 +60,7 @@ mkcd() {
 }
 # lol
 shh() {
-	ssh wyatt@192.168.2.6 -p 43083
+	ssh 192.168.2.6 -p 43083
 }
 # lol
 trans() {
