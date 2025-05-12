@@ -10,7 +10,6 @@ if [ -f $HOME/.ntfyenv ]; then
     . $HOME/.ntfyenv
 fi
 
-alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
 # Aliasssss sus [just maps a commant to another]
 # Nice colors
 # Show hidden files by default as well
@@ -39,7 +38,7 @@ HISTSIZE=10000
 HISTFILESIZE=10000
 
 # Sets up the prompt before where you type
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
 
 # Set neovim as default
 export EDITOR='nvim'
