@@ -6,9 +6,9 @@
     "margin-bottom": 0,
     "margin-right": 10,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "network#2", "temperature", "custom/weather", "hyprland/workspaces"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "network#2", "temperature", "hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "backlight", "pulseaudio", "network", "battery", "clock", "custom/power-menu"],
+    "modules-right": ["tray", "backlight", "pulseaudio", "network", "battery", "power-profiles-daemon", "clock" ],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
@@ -102,12 +102,6 @@
       "format-full": "  {capacity}%",
       "format-icons": [" ", " ", " ", " ", " "],
     },
-    "custom/weather": {
-      "exec": "python3 ~/.config/waybar/scripts/weather.py",
-      "restart-interval": 100,
-      "return-type": "json",
-      "on-click": "firefox --new-tab https://wttr.in/"
-    },   
 
    "custom/spotify": {
     "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
@@ -135,6 +129,17 @@
         "interval": 5,
         "thermal-zone": 3,
         "critical-threshold": 85,
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": " ",
+        "performance": " ",
+        "balanced": " ",
+        "power-saver": " "
+      }
     },
 }
 
