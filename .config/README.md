@@ -20,3 +20,4 @@ A lightweight notification daemon, with different priority configs! (pretty colo
 
 This is why I wanted to make this repo, to store my Hyprland config. One big file with all keybinds, animations, and startup apps. In the dir theres also some scripts and config for hyprpaper, a wallpaper daemon. 
 
+## Also see [this](https://github.com/Wyfi0/kickstart.nvim) for more dependencies
