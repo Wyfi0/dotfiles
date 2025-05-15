@@ -51,7 +51,7 @@ today() {
 }
 # Im lazyyyyyy ^-^
 hypr() {
-	nvimk ~/.config/hypr/hyprland.conf
+	nvim ~/.config/hypr/hyprland.conf
 }
 # Make a directory and cd into it
 mkcd() {
