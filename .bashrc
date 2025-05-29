@@ -79,7 +79,7 @@ alias fawk="history | fzf"
 
 alias H="Hyprland"
 
-alias fuck="/usr/bin/pipewire & /usr/bin/pipewire-pulse & /usr/bin/wireplumber"
+alias n="nvim"
 
 alias softsh="TERM=xterm-256color ssh soft"
 
