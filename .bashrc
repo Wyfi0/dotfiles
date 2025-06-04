@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Check if the ntfy.env exists and if so, include it 
+# Check if the .ntfyenv exists and if so, include it 
 if [ -f $HOME/.ntfyenv ]; then
     . $HOME/.ntfyenv
 fi
