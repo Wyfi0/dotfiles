@@ -21,7 +21,6 @@ alias neofetch='fastfetch'
 
 # Use config command to manage my dotfiles on github from anywhere 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
 alias conftui='gitui --directory $HOME/.cfg/  --workdir $HOME'
 
 alias mountsrv='sudo mount 192.168.2.6:/srv/nfs/md0/ /mnt/Raid'
@@ -32,6 +31,22 @@ alias lsconfig='config ls-tree -r HEAD --name-only'
 alias smash='~/Downloads/Slippi-Launcher-2.11.6-x86_64.AppImage'
 
 alias pdrop='hugo build && scp -rv public/* 64.227.4.155:/home/raina/docker/nginx/src'
+# Little cutie macros >w<
+# Im lazyyyyyy ^-^
+alias hypr='nvim ~/.config/hypr/hyprland.conf'
+# Make a directory and cd into it
+alias mkcd='mkdir -p -- "$1" && cd -P -- "$1"'
+# lol
+alias ssh='192.168.2.6 -p 43083'
+alias trans='ssh raina@192.168.2.69'
+alias drop='ssh raina@64.227.4.155'
+
+alias H="Hyprland"
+
+alias n="nvim"
+
+alias softsh="TERM=xterm-256color ssh soft"
+
 # How much of the history to store in ram in command count
 HISTSIZE=10000
 # How many commands to save on disk (im a maniac)
@@ -43,45 +58,6 @@ HISTFILESIZE=10000
 # Set neovim as default
 export EDITOR='nvim'
 export VISUAL='nvim'
-
-# Little cutie macros >w<
-today() {
-	echo -n "Today's date is: "
-	date +"%A, %B %-d, %Y"
-}
-# Im lazyyyyyy ^-^
-hypr() {
-	nvim ~/.config/hypr/hyprland.conf
-}
-# Make a directory and cd into it
-mkcd() {
-	mkdir -p -- "$1" && cd -P -- "$1"
-}
-# lol
-shh() {
-	ssh 192.168.2.6 -p 43083
-}
-# lol
-trans() {
-	ssh raina@192.168.2.69
-}
-# lol
-drop() {
-	ssh raina@64.227.4.155
-}
-# history awk
-
-alias hawk="history | awk "/$1/""
-
-alias lsawk="$(ls $1) | awk "/$2/""
-
-alias fawk="history | fzf"
-
-alias H="Hyprland"
-
-alias n="nvim"
-
-alias softsh="TERM=xterm-256color ssh soft"
 
 # Finally, introduce yourself, with pokemon!
 krabby random 1-6
