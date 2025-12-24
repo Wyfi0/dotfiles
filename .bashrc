@@ -39,11 +39,11 @@ alias hypr='nvim ~/.config/hypr/hyprland.conf'
 alias mkcd='mkdir -p -- "$1" && cd -P -- "$1"'
 
 # Add macros for sshing into my servers, both locally and remotely
-alias shh="ssh 192.168.2.6 -p 43083"
+alias shh="ssh 192.168.0.6 -p 43083"
 alias trans='ssh fuck.wyfi.top -p 49357'
-alias transs='ssh 192.168.2.69 -p 49357'
+alias transs='ssh 192.168.0.69 -p 49357'
 alias gender='ssh fuck.wyfi.top -p 28740'
-alias genderr='ssh 192.168.2.15 -p 28740'
+alias genderr='ssh 192.168.0.15 -p 28740'
 
 # Lol this is here but I never use it
 alias n="nvim"
