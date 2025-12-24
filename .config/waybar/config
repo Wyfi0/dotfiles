@@ -118,7 +118,7 @@
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
         "on-click": "wofi --show=drun -I",
-        "tooltip-format": "Artix btw",
+        "tooltip-format": "Arch btw <3",
     },
     "network#2": {
         "format": " {bandwidthUpBits}  {bandwidthDownBits}",
